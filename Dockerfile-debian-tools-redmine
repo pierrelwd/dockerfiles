@@ -1,0 +1,8 @@
+FROM debian:10
+
+WORKDIR /opt
+
+RUN apt update -y \
+&& apt install vim mariadb-server mariadb-client wget ruby-full libz-dev libiconv-hook1 libiconv-hook-dev ruby-dev libxml2 libxslt-dev gcc make procps libmariadb-dev -y
+
+EXPOSE 2368
